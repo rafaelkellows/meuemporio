@@ -1,0 +1,125 @@
+/*******************************
+          RESPONSIVE
+*******************************/
+
+@media screen and (max-width: 1170px) {
+	body{ overflow-x: hidden; }
+	main{ 
+		width: 100%; 
+	  header{
+	    h1{ margin-right: 0; }
+	    nav{
+	    	float: right; margin:10px 14px;
+	    	&:after{
+					content: ''; background: @gray-2; opacity: .5; position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 8; opacity: 0; width: 0; .transit;
+	    	}
+	      > a{
+	        display: block !important; float: right; border: 1px solid #c4c4c4; border-radius: 5px; padding: 10px 14px; background: #fff; z-index: 9;
+	        &:before{ font-size: 2.2em; text-align: center; color: @green-1; }
+	        span{ display: none; }
+	      }
+	      > ul{
+	      	position: absolute; top:100px; right:4px; z-index: 9; display: block; width: 0; opacity: 0; .transit;
+		      > li{ 
+						display: block; background: @gray-3;;
+						ul{
+							position: relative; opacity: 1; height: auto; width: 100%; padding:0; text-align: center;
+							li{ line-height: 16px; margin:0 -4px; } 
+						}
+						a{ line-height: 16px; padding:15px 0;  }
+		      }
+	    	}
+      	&.active {
+      		&:after{ opacity:.5; width: 100%; }
+      		> a{
+      			&:before{
+							content: "\f00d";
+      			}
+      		}
+      		> ul{ width:100%; opacity: 1; }
+      	}
+	    }
+	  }
+	  &.internal{
+	  	section{ padding: 0 20px; }
+
+	  }
+  }
+}
+
+@media screen and (max-width: 990px) {
+	main section.carrossel dl{ font-size: 80%; }
+}
+@media screen and (max-width: 768px) {
+	main{
+		section{
+			&.highlights dl{ width: 50%;	}
+			&.videoinfo{
+				iframe, aside{ width: 100%; }
+				aside{ padding: 15px 0 0; }
+			}
+		}
+	  &.internal{
+	  	.breadcrumb{
+	  		position: relative; margin-bottom: 42px;
+	  		ul{ width: 100%; position: absolute; 	bottom: -32px; 	left: 0; 	text-align: center; }
+	  	}
+	  	section{ 
+				&.highlights.company dl{ 
+					width: 100%;
+				}
+				&.form_contact{
+					aside, form{ width: 100%; }
+					form{ padding-top: 40px; }
+				}
+	  	}
+	  }
+	}
+}
+@media screen and (max-width: 690px) {
+	main{
+		section{
+			&.carrossel dl{ 
+				font-size: 60%;
+				dt{ top: 25%; }
+			}
+		}
+		&.internal{ 
+			section{
+				&.form_signin{
+					form.f_signin{
+						fieldset{
+							div{ 
+								width: 100%; padding-bottom: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+		form.f_extract {
+			input[type=text], input[type=password]{
+				width: 80%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 425px) {
+	main.internal section.form_signin form.f_signin fieldset div{
+		label{ display: block; text-align: left; }
+		em{ position: relative; display: block; top: initial; left: initial; text-align: left; }
+		input[type=text],input[type=password],select{ width: 100%; }
+	}
+	form.f_contact{
+		input[type=text],textarea{ width: 100%; margin: 0 0 15px; }
+	}
+}
+@media screen and (max-width: 325px) {
+	main section.highlights dl{ 
+		width: 100%;
+		&:before{ .d-l-middle; }
+		dt{ .d-l-middle; padding-left: 15px; width: 76%; }
+		dd{ padding:15px 0; }
+	}
+
+}

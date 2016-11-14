@@ -233,9 +233,18 @@ main{
           &.hl-03:before{ background-position: -114px -84px; width: 48px; }
         }
       }
+      /* QUEM SOMOS */
+      &.highlights.whoweare{
+        &:extend(main.internal section.highlights.company);
+        dl{ 
+          &:extend(main.internal section.highlights.company dl);
+          &:before{ display: none; }
+        }
+      }
       /* NOSSOS CLIENTES */
       &.clients_list{
         padding: 20px;
+        h5{ font-size: 20px; text-align: center; color: @gray-2; padding-bottom: 30px; }
         ul{
           text-align: center;
           li{ 

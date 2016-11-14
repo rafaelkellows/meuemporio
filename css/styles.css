@@ -511,6 +511,7 @@ main.internal .breadcrumb ul li a:after {
 main.internal section {
   /* SUA EMPRESA */
   /* DIFERENCIAIS */
+  /* QUEM SOMOS */
   /* NOSSOS CLIENTES */
   /* CONTATO */
   /* CADASTRE-SE: ; */
@@ -543,12 +544,14 @@ main.internal section.videoinfo a:hover {
   color: #205e53;
 }
 main.internal section.highlights.company,
-main.internal section.highlights.diferencials {
+main.internal section.highlights.diferencials,
+main.internal section.highlights.whoweare {
   background: #f8f8f8;
   text-align: center;
 }
 main.internal section.highlights.company dl,
-main.internal section.highlights.diferencials dl {
+main.internal section.highlights.diferencials dl,
+main.internal section.highlights.whoweare dl {
   width: 33.3%;
   padding: 25px;
   text-align: left;
@@ -589,8 +592,17 @@ main.internal section.highlights.diferencials dl.hl-03:before {
   background-position: -114px -84px;
   width: 48px;
 }
+main.internal section.highlights.whoweare dl:before {
+  display: none;
+}
 main.internal section.clients_list {
   padding: 20px;
+}
+main.internal section.clients_list h5 {
+  font-size: 20px;
+  text-align: center;
+  color: #898989;
+  padding-bottom: 30px;
 }
 main.internal section.clients_list ul {
   text-align: center;
@@ -843,7 +855,8 @@ main.internal section.form_signin form.f_signin fieldset div em {
     text-align: center;
   }
   main.internal section.highlights.company dl,
-  main.internal section.highlights.diferencials dl {
+  main.internal section.highlights.diferencials dl,
+  main.internal section.highlights.whoweare dl {
     width: 100%;
   }
   main.internal section.form_contact aside,

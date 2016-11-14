@@ -4,7 +4,7 @@
           <a class="fa fa-bars" href="javascript:void();" title="Menu"><span>Menu</span></a>
           <ul>
             <li>
-              <a href="javascript:void(0);" title="Quem Somos"><span>Quem Somos</span></a>            
+              <a href="quem_somos.php" title="Quem Somos"><span>Quem Somos</span></a>            
               <ul>
                 <li><a href="sua_empresa.php" title="Sua Empresa"><span>Sua Empresa</span></a></li>
                 <li><a href="diferenciais.php" title="Diferenciais"><span>Diferenciais</span></a></li>

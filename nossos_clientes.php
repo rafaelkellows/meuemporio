@@ -18,6 +18,7 @@
         </ul>
       </div>
       <section class="clients_list">
+        <h5>CONHEÇA QUEM JÁ POSSUI NOSSAS LOJAS</h5>
         <ul>
           <li><img src="images/clientes/BIP.png" title="BI&P - Banco Indusval&Parterns" /></li>
           <li><img src="images/clientes/brasil.png" title="BRASILPREV" /></li>
